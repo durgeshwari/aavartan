@@ -45,7 +45,7 @@ public class SliderAdapter extends PagerAdapter {
         LinearLayout linearLayout = (LinearLayout) view.findViewById(R.id.linearLayout);
 
         textView.setText(colorName.get(position));
-        linearLayout.setBackgroundColor(color.get(position));
+        linearLayout.setBackgroundResource(color.get(position));
 
         ViewPager viewPager = (ViewPager) container;
         viewPager.addView(view, 0);
