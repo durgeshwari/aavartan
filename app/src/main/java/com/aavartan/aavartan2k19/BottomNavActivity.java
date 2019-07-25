@@ -28,6 +28,7 @@ public class BottomNavActivity extends AppCompatActivity implements BottomNaviga
         mTextMessage = findViewById(R.id.message);
         navView.setOnNavigationItemSelectedListener(BottomNavActivity.this);
 
+        loadFragment(new HomeFragment());
 
     }
 
