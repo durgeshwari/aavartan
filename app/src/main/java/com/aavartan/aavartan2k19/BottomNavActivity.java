@@ -12,7 +12,7 @@ import com.aavartan.aavartan2k19.fragments.AttractionFragment;
 import com.aavartan.aavartan2k19.fragments.EventFragment;
 import com.aavartan.aavartan2k19.fragments.FaceFragment;
 import com.aavartan.aavartan2k19.fragments.HomeFragment;
-import com.aavartan.aavartan2k19.fragments.tshirtFragment;
+import com.aavartan.aavartan2k19.fragments.sponsorFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class BottomNavActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
@@ -62,7 +62,7 @@ public class BottomNavActivity extends AppCompatActivity implements BottomNaviga
                 fragment=new FaceFragment();
                 break;
             case R.id.navigation_tshirt:
-                fragment=new tshirtFragment();
+                fragment=new sponsorFragment();
                 break;
         }
         return loadFragment(fragment);
