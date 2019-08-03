@@ -10,7 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import com.aavartan.aavartan2k19.R;
-import com.aavartan.aavartan2k19.fragments.EventFragment;
+import com.aavartan.aavartan2k19.Event.FunDetail;
+import com.aavartan.aavartan2k19.Event.ManagerialDetail;
+import com.aavartan.aavartan2k19.Event.model.Model;
+import com.aavartan.aavartan2k19.Event.RoboticsDetail;
+import com.aavartan.aavartan2k19.Event.TechnicalDetail;
+
 import java.util.List;
 
 public class Adapter extends PagerAdapter {
@@ -42,6 +47,7 @@ public class Adapter extends PagerAdapter {
 
         ImageView imageView;
         TextView title, desc;
+        int i;
 
         imageView = view.findViewById(R.id.image);
         title = view.findViewById(R.id.title);
@@ -52,11 +58,38 @@ public class Adapter extends PagerAdapter {
         desc.setText(models.get(position).getDesc());
 
         view.setOnClickListener(new View.OnClickListener() {
+
+            String s = models.get(position).getTitle();
+
+
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(context, DetailActivity.class);
-                intent.putExtra("param", models.get(position).getTitle());
-                context.startActivity(intent);
+                switch(position){
+                    case 0:
+                        Intent i1 = new Intent(context, TechnicalDetail.class);
+                        context.startActivity(i1);
+                        break;
+
+                    case 1:
+                        Intent i2 = new Intent(context, FunDetail.class);
+                        context.startActivity(i2);
+                        break;
+
+                    case 2:
+                        Intent i3 = new Intent(context, ManagerialDetail.class);
+                        context.startActivity(i3);
+                        break;
+
+                    case 3:
+                        Intent i4 = new Intent(context, RoboticsDetail.class);
+                        context.startActivity(i4);
+                        break;
+
+                        default:
+                            break;
+
+                }
+
                 // finish();
             }
         });

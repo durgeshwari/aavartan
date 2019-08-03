@@ -10,12 +10,11 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.aavartan.aavartan2k19.EventFragment.Adapter;
-import com.aavartan.aavartan2k19.EventFragment.Model;
+import com.aavartan.aavartan2k19.Event.model.Model;
 import com.aavartan.aavartan2k19.R;
 import com.aavartan.aavartan2k19.ScheduleActivity;
 

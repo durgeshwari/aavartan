@@ -8,4 +8,5 @@
     <string name="title_attraction">Attractions</string>
     <string name="title_tshirt">T-shirt</string>
     <string name="title_face">Face of Aavartan</string>
+    <string name="title_activity_details_technical">details_technical</string>
 </resources>

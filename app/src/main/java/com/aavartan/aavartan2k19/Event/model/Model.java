@@ -1,4 +1,4 @@
-package com.aavartan.aavartan2k19.EventFragment;
+package com.aavartan.aavartan2k19.Event.model;
 
 public class Model {
 

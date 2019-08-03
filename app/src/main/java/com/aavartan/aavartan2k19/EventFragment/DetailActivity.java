@@ -2,6 +2,7 @@ package com.aavartan.aavartan2k19.EventFragment;
 
 import android.os.Bundle;
 
+import android.widget.Switch;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,10 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.event_detail);
 
         TextView textView = findViewById(R.id.textView);
-        textView.setText(getIntent().getStringExtra("param"));
+        String s = getIntent().getStringExtra("param");
+
+
+
+        }
     }
-}
+
